@@ -1,0 +1,188 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  font-weight: medium;
+  background-color: #F8F9FA;
+  color: #000;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: rgba(33, 33, 32, 0.47);
+  border-radius: 10px;
+  margin: 10px;
+}
+header .logo img {
+  width: 30px;
+  height: auto;
+}
+header nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #000;
+  font-weight: 600;
+  font-size: 0.9em;
+}
+header nav a:hover {
+  text-decoration: underline;
+}
+header .social-icons img {
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
+}
+
+.hero {
+  text-align: left;
+  padding: 40px 20px;
+}
+.hero img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+.hero h1 {
+  font-size: 2.5em;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.hero p {
+  margin-bottom: 20px;
+}
+.hero button {
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.hero button:hover {
+  background-color: #444;
+}
+
+.competenze, .progetti, .contact {
+  padding: 40px 20px;
+  text-align: left;
+}
+.competenze h2, .progetti h2, .contact h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.contact form input, .contact form textarea, .contact form select, .contact form button {
+  margin: 10px 0;
+  padding: 10px;
+  font-size: 1em;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #000;
+  color: #fff;
+}
+
+#hero, #progetti {
+  position: relative;
+  background-color: #e0e0e0;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+}
+
+.section-divider {
+  width: 80%;
+  height: 2px;
+  background-color: #000;
+  margin: 20px auto;
+}
+
+.progetti .scroll-container {
+  display: flex;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  padding: 10px 30px;
+  gap: 40px;
+  max-width: 100%;
+  white-space: nowrap;
+}
+.progetti .scroll-container::-webkit-scrollbar {
+  height: 8px;
+}
+.progetti .scroll-container::-webkit-scrollbar-thumb {
+  background-color: rgba(33, 33, 32, 0.32);
+  border-radius: 10px;
+}
+.progetti .scroll-container::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+.progetti .project-card {
+  flex: 0 0 auto;
+  width: 200px;
+  text-align: left;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: transparent;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+.progetti .project-card a {
+  text-decoration: none;
+  color: black;
+}
+.progetti .project-card a:hover {
+  color: #444;
+}
+
+body, .competenze, .progetti, .contact, .hero, footer {
+  line-height: 1.4;
+  margin-bottom: 10px;
+}
+
+.competenze h3 {
+  font-size: 24px;
+  font-weight: bold;
+}
+.competenze p {
+  font-size: 20px;
+  font-weight: 500;
+}
+.competenze .row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 10px;
+}
+.competenze .row::-webkit-scrollbar {
+  height: 8px;
+}
+.competenze .row::-webkit-scrollbar-thumb {
+  background-color: rgba(33, 33, 32, 0.32);
+  border-radius: 10px;
+}
+.competenze .row::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+.competenze .col-md-3 {
+  flex: 0 0 auto;
+  width: 200px;
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: transparent;
+}/*# sourceMappingURL=portfolio.css.map */

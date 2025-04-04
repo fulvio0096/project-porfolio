@@ -1,0 +1,284 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    font-weight: medium;
+    background-color: #F8F9FA;
+    color: #000;
+}
+
+header {
+    position: sticky; 
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #21212077;
+    border-radius: 10px;
+    margin: 10px;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.logo img {
+    width: 30px;
+    height: auto;
+}
+
+header nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+    font-size: 0.9em;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+.social-icons img {
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+}
+
+.hero {
+    text-align: left;
+    padding: 40px 20px;
+}
+
+.hero img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    margin-bottom: 20px;
+}
+
+.hero button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+}
+
+.hero button:hover {
+    background-color: #444;
+}
+
+.competenze, .progetti, .contact {
+    padding: 40px 20px;
+    text-align: left;
+}
+
+.competenze h2, .progetti h2, .contact h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact form input, .contact form textarea, .contact form select, .contact form button {
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 1em;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #000;
+    color: #fff;
+    width: 100vw; 
+    margin-left: calc(-50vw + 50%); 
+}
+
+#hero {
+    position: relative;
+    background-color: #e0e0e0;
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+}
+
+#progetti {
+    position: relative;
+    background-color: #e0e0e0;          
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+}
+
+.section-divider {
+    width: 80%;
+    height: 2px;
+    background-color: #000;
+    margin: 20px auto;
+}
+
+.progetti .scroll-container {
+    display: flex;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    padding: 10px 30px; 
+    gap: 40px; 
+    max-width: 100%;
+    white-space: nowrap;
+}
+
+.progetti .scroll-container::-webkit-scrollbar {
+    height: 8px;
+}
+
+.progetti .scroll-container::-webkit-scrollbar-thumb {
+    background-color: #21212051;
+    border-radius: 10px;
+}
+
+.progetti .scroll-container::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+.progetti .project-card {
+    flex: 0 0 auto;
+    width: 200px;
+    text-align: left;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: transparent;
+    display: inline-block;
+    margin-bottom: 10px; 
+}
+
+.progetti .project-card a {
+    text-decoration: none;
+    color: black;
+}
+
+.progetti .project-card a:hover {
+    color: #444;
+}
+
+body, .competenze, .progetti, .contact, .hero, footer {
+    line-height: 1.4;
+    margin-bottom: 10px;
+}
+
+.competenze h3 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.competenze p {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.progetti h3 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.progetti p {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.competenze .row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 10px;
+}
+
+.competenze .row::-webkit-scrollbar {
+    height: 8px;
+}
+
+.competenze .row::-webkit-scrollbar-thumb {
+    background-color: #21212051;
+    border-radius: 10px;
+}
+
+.competenze .row::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+.competenze .col-md-3 {
+    flex: 0 0 auto;
+    width: 200px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: transparent;
+}
+
+@media (max-width: 768px) {
+    header {
+        display: flex;
+        flex-direction: column; 
+        align-items: center; 
+        padding: 10px; 
+    }
+
+    nav {
+        width: 100%; 
+        text-align: center; 
+    }
+
+    nav ul {
+        flex-direction: column; 
+        gap: 10px; 
+    }
+
+    nav ul li {
+        width: 100%; 
+    }
+
+    nav ul li a {
+        display: block;
+        padding: 10px; 
+    }
+
+    #hero {
+        flex-direction: column; 
+    }
+
+    #hero .col-md-6:first-child {
+        order: 2; 
+    }
+
+    #hero .col-md-6:last-child {
+        order: 1; 
+        text-align: center; 
+    }
+
+    #hero img {
+        margin-bottom: 20px; 
+    }
+
+    select[name="tipo"] {
+        width: 100%;
+        padding: 10px;
+        font-size: 1em;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        background-color: #fff;
+    }
+}
